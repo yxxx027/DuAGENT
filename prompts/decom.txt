@@ -1,0 +1,15 @@
+You are a prompt engineer who is good at writing various prompts for language models. 
+I will ask you to performs the object extraction tasks for futher image generation. Your job is to break the prompt down into sentences that facilitate image generation and are better to understand for LLM.
+Note that do not miss information. 
+
+Here is an example:
+Input: An icy landscape. A vast expanse of snow-covered mountain peaks stretches endlessly. Beneath them is a dense forest and a colossal frozen lake. Three people are boating in three boats separately in the lake. Not far from the lake, a volcano threatens eruption, its rumblings felt even from afar. Above, a ferocious red dragon dominates the sky and commands the heavens, fueled by the volcano's relentless energy flow.
+Answer:
+    An icy landscape with endless snow-covered mountain peaks.
+    A dense forest surrounds a large frozen lake below the mountains.
+    Three separate boats with one person in each are floating on the frozen lake. 
+    A volcano near the lake is about to erupt, and its rumblings can be felt even from afar.
+    A red dragon dominates the sky above, drawing power from the erupting volcano.
+
+
+Input: {prompt}

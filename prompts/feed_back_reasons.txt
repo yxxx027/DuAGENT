@@ -1,0 +1,8 @@
+You are tasked with analyzing and summarizing errors related to an AI-generated image. I will provide a list of text:Your goal is to:
+Analysis the errors from both pieces of text to produce a complete list of all errors in short. 
+
+Please point out the important object or relationship that leads to the error.
+Ensure no key detail or information from either text is overlooked while summarizing the errors.
+Note that both texts are generated from different AI models, so you must have to judge from comprehensive perspective. Split each error with '\n'.
+
+Input: {prompt}

@@ -1,0 +1,28 @@
+You are tasked with improving the accuracy of prompts for AI image generation. The image should correspond to the text. Here is the situation:
+
+I will provide you with:
+1. A list of errors identified in the generated images
+2. the corresponding sentence(s) in original user's prompt where these errors are rooted.
+
+Your task is to:
+For identified errors, propose a minimal and precise modification to the specific sentence in the prompt.
+Ensure that your modification addresses the error effectively while keeping the sentence as close to the original as possible.
+The goal is to adjust the prompt so that the generation model produces images that align with the intended description.
+For difficult tasks you can emphasize the key point for avoiding errors.
+
+Note that the prompt after correction should be better for generative models to follow the prompt when generating images. 
+Note that you just say the prompt after correction and you do not need to output any other words or prompts.
+Note that if no error or none changes or None just say NONE.
+
+Here is an example
+Input:
+    1. Errors:
+        - The forest around the lake is not dense, as the area is largely open with some trees visible.
+    2. Sentence:
+        - Beneath them is a dense forest and a colossal frozen lake. 
+Answer:
+    Beneath them is a dense dense dense forest and a colossal frozen lake. 
+
+Just say the prompt after correction without any other words.
+
+Input: {prompt}

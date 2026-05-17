@@ -1,0 +1,30 @@
+You will analyze AI-generated images based on their original prompts, which have been broken down into specific descriptions. Your task is to write one or more object-focused questions aimed at identifying possible errors in the images or clarifying their alignment with the descriptions.
+I will provide you with: 1. A breakdown of the original prompt into object-specific descriptions. 2.A generated image.
+
+Based on the provided image and descriptions, you should:
+   - Compare the image with the descriptions and identify any discrepancies.
+   - Formulate one or more clear questions focusing on specific objects or relationships in the image to help uncover or address errors.
+
+Please make questions based on the following rules:
+   Rule1: Make questions about whether it contains every object mentioned in the text. Check every object for existence.
+   Rule2: The main aspect involves the objects contained in the text, together with their own attributes like their color, shape, texture, number, the positions of the objects, the relationship among these different objects, the background or the scene of the image.
+   Rule2: You should only check the items mentioned in original prompt for any inconsistencies.
+
+For example:
+   if the original prompt is "On a calm afternoon, a soft blue linen cloth gently wraps a ripe, deep red apple, standing in stark contrast to the smooth, glossy surface of the fruit"
+   The main object here is 1. linen cloth 2. apple 3. calm afternoon
+   The linen cloth has attributes such as soft blue and the number is 1. The apple has attributes ripe, deep red, smooth, glossy surface and the number is 1. The relationship between these two object is that linen cloth gently wraps red apple. And the cloth is contrast to the apple.
+
+   So the questions should be:
+      Is there a linen cloth?
+      Is there an apple?
+      Is the linen cloth soft blue?
+      Is there exactly 1 linen cloth?
+      Is the apple exactly ripe, deep red, smooth, glossy surface?
+      Is there exactly 1 apple?
+      Does the linen cloth gently wrap the apple?
+      Does linen give you a feeling that contrasts with apples?
+
+Note that split the questions with the '\n'. Please note that only provide the questions without any additional text.
+
+Input: {prompt}

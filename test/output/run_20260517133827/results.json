@@ -1,0 +1,49 @@
+{
+  "config": {
+    "timestamp": "20260517133827",
+    "num_prompts": 10,
+    "use_structured": false,
+    "use_negative": false,
+    "use_clip": false,
+    "model_name": "sd1",
+    "input_file": "evaluation/test_prompts.txt"
+  },
+  "prompts": [
+    "A red apple and a blue car are parked next to a green tree on a sunny afternoon.",
+    "A golden retriever is sitting on a wooden bench under a large oak tree, with a red ball on the grass to its left.",
+    "Three white cats are sitting on a red sofa, with a yellow lamp behind them and a blue rug underneath.",
+    "A tall glass building with a round clock tower stands behind a small wooden bridge over a blue river.",
+    "A young woman in a purple dress is holding a white umbrella while standing next to a black horse on a green hill.",
+    "Two brown dogs are running on a sandy beach with a red frisbee between them and the ocean in the background.",
+    "A silver teapot and a blue ceramic cup are placed on a round wooden table inside a bright kitchen.",
+    "A small red car is parked in front of a tall white building with green windows on a rainy street.",
+    "A large orange cat is sleeping on a blue cushion next to a green plant on a wooden shelf.",
+    "Five yellow ducks are swimming in a circular pond with a stone fountain in the center and green lily pads around."
+  ],
+  "enhanced_prompts": [
+    "A red apple and a blue car are parked next to a green tree on a sunny afternoon.",
+    "A golden retriever is sitting on a wooden bench under a large oak tree, with a red ball on the grass to its left.",
+    "Three white cats are sitting on a red sofa, with a yellow lamp behind them and a blue rug underneath.",
+    "A tall glass building with a round clock tower stands behind a small wooden bridge over a blue river.",
+    "A young woman in a purple dress is holding a white umbrella while standing next to a black horse on a green hill.",
+    "Two brown dogs are running on a sandy beach with a red frisbee between them and the ocean in the background.",
+    "A silver teapot and a blue ceramic cup are placed on a round wooden table inside a bright kitchen.",
+    "A small red car is parked in front of a tall white building with green windows on a rainy street.",
+    "A large orange cat is sleeping on a blue cushion next to a green plant on a wooden shelf.",
+    "Five yellow ducks are swimming in a circular pond with a stone fountain in the center and green lily pads around."
+  ],
+  "negative_prompts": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "baseline_scores": [],
+  "improved_scores": []
+}

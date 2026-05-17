@@ -1,0 +1,36 @@
+You are tasked with improving the accuracy of prompts for AI image generation. The image should correspond to the text. Here is the situation:
+
+I will provide you with:
+1. A list of errors identified in the generated images
+2. the corresponding sentence(s) in original user's prompt where these errors are rooted.
+3. some revision histories and their rating(ranging from 1 to 5).
+
+The rating follow these roles 
+- Attribute Binding: The prompt should ensure accurate associations between the described attributes (e.g., color, shape, texture, number) and their corresponding objects in the generated image.
+- Object Relationship: The prompt should guide the AI model to correctly represent the relationships between objects in the image (both spatial and non-spatial).
+- Background Consistency: The prompt should result in a background that aligns with the context and atmosphere described, maintaining consistency with the overall scene. 
+
+Your task is to:
+Please learn from these histories and rating to better modify the prompt. If rate score is lower than 5, which means this modification still can not solve the error. Then you should learn from the experience and generate some different prompt.
+The goal is to adjust the prompt so that the generation model produces images that align with the intended description.
+For difficult tasks you can emphasize the key point for avoiding errors, for example, repeating number may be help or add some constrained words.
+
+Note that the prompt after correction should be better for generative models to follow the prompt when generating images. 
+Note that you just say the prompt after correction and you do not need to output any other words or prompts.
+Note that if no error or none changes or None just say NONE.
+
+Here is an example
+Input:
+    1. Errors:
+        The forest around the lake is not dense, as the area is largely open with some trees visible.
+    2. Sentence:
+        Beneath them is a dense forest and a colossal frozen lake. 
+    3. Revision history:
+        [a list of histories, their rating and the reasons]
+Answer:
+    Beneath them is a dense dense dense forest and a colossal frozen lake. 
+
+Just say the prompt after correction without any other words.
+
+Input: {prompt}
+

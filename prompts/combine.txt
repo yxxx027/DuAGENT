@@ -1,0 +1,36 @@
+Your task is to analyze and summarize errors related to an AI-generated image. 
+I will provide two pieces of text and the original prompt:
+First text:  analysis of potential errors from the visual question answering conversation. If None, it means no error been analyzed here.
+Second text: analysis of potential errors between the breakdown prompt and the caption of image. If None, it means no error been analyzed here.
+Original prompt: Full origin prompt. The original prompt is the ground truth.
+
+Your goal is to:
+Comparing to the original prompt, analysis the errors from both pieces of text to produce a complete list of all errors. 
+
+Follow these rules:
+    Rule1: Please point out the most important object or relationship that leads to the error in short. Just say the key point.
+    Rule3: You must have to judge whether the text is an error or not based on the full original prompt. 
+    Rule4: If some thing is not mentioned in the whole orinal prompt, then it is an error and you should point out.
+    Rule5: If the text say that some thing is not mentioned in breakdown prompt, you should analysis based on the original prompt. If it matches with original prompt, then just ignore it.
+    Rule6: List all errors carefully and split each error with '\n'.
+    Rule7: If no error, just say None
+Note that do not say "the caption mentions something but the original prompt something else". In that case, just say something is wrong, it should be...
+
+Here is an example:
+    Input:
+        Text 1:
+        The monkey is on the blue bike not a green bike. The monkey should be on a green bike.
+        The caption mentions a bottle in the image but it does not appears in the breakdown prompt.([here for setences like this, you have to judge whether it is an error based on the full original prompt, in case of bottle mentioned in some other places in the propmt])
+
+        Text 2:
+        Error:
+        - The prompt describes a green bike with a monkey on it; however, the caption introduces a blue bike, which should be green.
+        YES.The bottle is not the primary focus of the image; the focus appears to be on the monkey.
+
+        Original full prompt:
+        A monkey is sitting on a green bike and a bottle on the road.
+        
+    Answer:
+        Error1: The color of the bike is wrong. The monkey should be on a green bike, not a blue one.
+
+Input: {prompt}

@@ -1,0 +1,142 @@
+{
+    "Quantity Errors": {
+        "refinement": "To address this issue, the optimized prompt employs a strategy of repeating quantity keywords and incorporates the adverbs ``exactly'' and ``precisely'' to enhance precision.",
+        "example": "For example, the original prompt did not guarantee the correct depiction of exactly eight chairs.\nThe optimized prompt emphasizes the exact number of ``eight chairs'' and uses ``exactly'' to reinforce the precision of the quantity, thereby ensuring that the generated image accurately reflects the specified number of objects."
+    },
+    "Spatial Positioning Errors": {
+        "refinement": "The optimized prompt addresses this by introducing a more systematic approach to spatial description. It explicitly defines objects' coordinates, angles, and distances to other objects within a three-dimensional framework.",
+        "example": "For example, the original prompt caused errors in the depiction of the boy's position relative to the woman, resulting in inconsistencies with the intended positioning.\nThe optimized prompt clarifies spatial positions with terms like ``precisely'' and ``directly behind'' to reduce ambiguity and ensures that spatial relationships are conveyed unambiguously, thereby minimizing spatial positioning errors and eliminating inconsistencies in the generated image."
+    },
+    "Texture Errors": {
+        "refinement": "The optimized prompt tackles this issue by introducing more detailed texture descriptions and emphasizing them.",
+        "example": "For example, the original prompt failed to highlight the frosty texture on the boards, which is inadequately visible.\nThe optimized prompt provides more detailed descriptions of the texture and repeatedly emphasizes the frosty texture on both ice and boards to correct texture visibility errors and make the generated image more realistic."
+    },
+    "Color Errors": {
+        "refinement": "The optimized prompt introduces a more systematic approach to color description by incorporating precise color terminology and describing colors across multiple dimensions such as hue, brightness, and saturation.",
+        "example": "For example, the original prompt's lack of specificity in defining the pear's color resulted in variations and potential color mismatches in the output.\nTo address this, the optimized prompt employs exact color references like ``Pantone 376C'' to specify the pear's color, thereby reducing ambiguity and enhancing color accuracy in the generated image."
+    },
+    "Shape Errors": {
+        "refinement": "The optimized prompt tackles this issue by repeatedly emphasizing the unique shape of the object and adding detailed descriptions.",
+        "example": "For example, the glasses on the horse were not clearly differentiated in terms of color and shape from the original prompt.\nThe optimized prompt provides a clearer distinction for the types of glasses by detailing their specific colors and frame shapes through expanded descriptions, thereby enhancing the accuracy and logic of the object's shape in the generated image."
+    },
+    "Proportion Errors": {
+        "refinement": "The optimized prompt addresses this by providing detailed descriptions of object proportions and introducing specific measurement references.",
+        "example": "For example, the original prompt failed to effectively depict the size relationship between the oversized blue rubber ball and the net and hoop.\nThe optimized prompt emphasizes the impossibility of the ball passing through the hoop by enhancing the description of the ball's oversized nature, thereby ensuring a more realistic representation of proportions in the generated image."
+    },
+    "Action or Pose Errors": {
+        "refinement": "The optimized prompt addresses this by incorporating detailed action descriptions and emphasizing dynamic balance.",
+        "example": "For example, the original prompt resulted in ambiguities related to spatial relationships between body parts, especially in arm and leg positioning, which affected the sense of balance.\nThe optimized prompt utilizes specific descriptions to define spatial relationships and emphasizes precise alignment and balance, thereby enhancing the overall dynamic and harmonic posture in the generated image."
+    },
+    "Scene Element Omissions": {
+        "refinement": "The optimized prompt solves this by explicitly listing all critical elements required in the scene and reiterating their quantity and spatial relationships.",
+        "example": "For example, the original prompt mentioned tools and metal racks but failed to highlight their prominence, resulting in a minimalist scene that deviated from the intended complexity.\nThe optimized prompt explicitly lists elements like ``tools'' and ``metal racks'' through repetition, ensuring they are visually emphasized and properly positioned, thereby enriching the scene and aligning it with the detailed description provided"
+    },
+    "Extraneous Scene Elements": {
+        "refinement": "The optimized prompt addresses this issue by explicitly excluding unnecessary elements and emphasizing their absence.",
+        "example": "For example, the original prompt failed to specify the absence of other furniture or objects in the room, leading to the inclusion of unintended elements.\nThe optimized prompt distinctly stated the absence of other elements like benches or lighting in the room, thereby preventing superfluous additions and ensuring the scene remains faithful to the intended description."
+    },
+    "Indistinct Background Errors": {
+        "refinement": "The optimized prompt solves this by explicitly enumerating background elements and emphasizing their characteristics, positions, and spatial relationships relative to the foreground.",
+        "example": "For example, the original prompt's vague description of the evening sky and surrounding foliage resulted in inconsistent or underdeveloped background details.\nThe optimized prompt added precise descriptions of elements like ``large, reflective aviator sunglasses'' and the cat's ``small, furry face'' ensuring these features are clearly generated while also detailing the background to enhance overall image coherence."
+    },
+    "Lighting Errors": {
+        "refinement": "The optimized prompt addresses this by explicitly defining the light source, direction, intensity, color, and its interplay with objects in the scene.",
+        "example": "For example, the original prompt failed to effectively capture the interaction between light and mist, which is critical for creating a misty atmosphere.\nThe optimized prompt greatly enhances the accuracy of the lighting elements by specifically defining the light's origin, direction, intensity, color, and interaction with mist."
+    },
+    "Shadow Errors": {
+        "refinement": "The optimized prompt tackles this issue by clearly specifying the light source, direction, intensity, and the material and shape of objects.",
+        "example": "For instance, the original prompt's lighting didn't consistently emphasize the bristles or cast long shadows, leading to inaccurate shadow patterns.\nThe optimized prompt highlights the monitor's soft glow as the main light source for highlighting the bristles and casting shadows, enhancing shadow depiction accuracy, and ensuring light sources, objects, and their shadows are consistent in the generated image."
+    },
+    "Reflection Errors": {
+        "refinement": "The optimized prompt addresses this by strengthening the description of the reflection process and detailing the light source's origin, direction, intensity, and the object's material and surface properties.",
+        "example": "For instance, the original prompt failed to effectively capture the reflection of lighting on the desk's surface due to a lack of emphasis on reflective qualities.\nThe optimized prompt enhances the description of lighting reflection by using phrases like ``clearly reflecting the soft glow'' thereby improving clarity on reflective surfaces and ensuring the generated image adheres to physical reflection principles."
+    },
+    "Object Blurriness": {
+        "refinement": "The optimized prompt addresses this by emphasizing clear contours and layered details, introducing terms like ``sharpness'' and ``high resolution'' while providing multi-level descriptions of local details.",
+        "example": "For example, the original prompt resulted in a blurred depiction of the anime character’s facial features.\nThe optimized prompt emphasizes ``ultra-high-definition rendering'' and specifies details like ``distinct eyelash strands'' and ``subtle skin pores visible under studio lighting'' to ensure clarity in both macro and micro details of the object."
+    },
+    "Style Errors": {
+        "refinement": "The optimized prompt addresses this by introducing stylized keywords and specifying style characteristics such as line thickness, color saturation, and lighting treatment, all while emphasizing stylistic uniformity.",
+        "example": "For example, the original prompt led to inconsistencies in the steampunk style of the clockwork mechanism.\nThe optimized prompt specifies features like “hyper-detailed brass gears with visible rivets” and “soft Edison bulb illumination” to enforce stylistic coherence across all components, ensuring a unified visual style in the generated image."
+    },
+    "Material Errors": {
+        "refinement": "The optimized prompt addresses this by explicitly specifying the physical attributes of materials, such as roughness, glossiness, and transparency.",
+        "example": "For example, the original prompt failed to render the metallic texture of the samurai armor.\nThe optimized prompt uses precise material descriptors like “matte blackened steel with brushed titanium accents” to refine material fidelity, ensuring the generated image accurately reflects the intended texture and finish."
+    },
+    "Composition Errors": {
+        "refinement": "The optimized prompt resolves this issue by combining composition keywords with quantified object placement and proportion, and by clarifying the hierarchical relationship between the main subject and the background.",
+        "example": "For example, the original prompt resulted in an unbalanced composition with the main subject positioned at the edge of the frame.\nThe optimized prompt specifies ``precise frame composition with the subject centered at the golden ratio point'' to achieve harmonic visual balance, ensuring the layout aligns with the intended design principles."
+    },
+    "Interaction Errors": {
+        "refinement": "The optimized prompt addresses this by using emphasis and contrast to enhance the description of interaction details, ensuring vivid and accurate depictions of how objects interact.",
+        "example": "For example, the faint trail of damp grass left on the ball as it moves was entirely missing in the original prompt.\nThe optimized prompt includes a clearer depiction of the interaction between the damp grass and the rolling baseball, ensuring the faint trail is distinctly noticeable and the interaction between the two elements is portrayed realistically."
+    },
+    "Ambiguous Object States": {
+        "refinement": "The optimized prompt addresses this by explicitly defining the specific state of objects, such as motion, power status, or deformation, and incorporating dynamic descriptions.",
+        "example": "For example, the original prompt led to ambiguity in whether the lamp was on or off.\nThe optimized prompt specifies ``the lamp is in an on state with warm light'' to clarify its operational status, ensuring the generated image accurately reflects the intended state of the object."
+    },
+    "Object Fusion Errors": {
+        "refinement": "The optimized prompt addresses this by emphasizing the independence and boundaries of objects, employing clear separation descriptions.",
+        "example": "For example, the original prompt caused the cat and the dog to merge into a single indistinct shape.\nThe optimized prompt specifies ``next to'' and enforces ``visible fur texture differentiation'' to maintain their individual identities, preserving the distinctness of each object in the generated image."
+    },
+    "Emphasis Errors": {
+        "refinement": "The optimized prompt addresses this issue by incorporating emphasis keywords such as ``highlight'' and ``emphasize'', combined with contrastive descriptions to draw attention to focal points.",
+        "example": "For example, the original prompt failed to highlight the majestic appearance of the dragon.\nThe optimized prompt emphasizes ``the dragon’s scales gleaming with iridescent hues'' to ensure it stands out as the focal point, thereby enhancing the visual impact and ensuring the intended elements are prominently featured in the generated image."
+    },
+    "Atmospheric Mismatch Errors": {
+        "refinement": "The optimized prompt addresses this by incorporating explicit atmospheric keywords like ``mood'' and ``atmosphere'' alongside detailed descriptions of environmental elements such as lighting, color tones, and specific details.",
+        "example": "For example, the original prompt failed to create the intended mysterious forest atmosphere.\nThe optimized prompt emphasizes ``a dark and mysterious atmosphere with fog swirling around ancient tree roots'' and specifies ``dappled moonlight filtering through dense branches with a cool blue tone'' to enhance the intended mood, ensuring the generated image effectively conveys the desired atmosphere."
+    },
+    "Cluttered Background Errors": {
+        "refinement": "The optimized prompt addresses this by defining a neutral and clean background and imposing restrictions on background elements.",
+        "example": "For example, inadequate details in the original prompt led to distracting background elements that interfered with the scene's focus.\nThe optimized prompt defined a neutral and uncluttered background to emphasize the piano and bench, preventing distractions and ensuring the main subjects remain the focal point in the generated image."
+    },
+    "Partial Object Generation": {
+        "refinement": "The optimized prompt addresses this by detailing the object's overall structure and each part's specifics, clarifying the connections between parts, and repeatedly emphasizing the object's completeness.",
+        "example": "For example, the original prompt caused the generation of a bicycle with a missing rear wheel.\nThe optimized prompt specifies the ``complete structure of a bicycle with two wheels'' and repeatedly emphasizes that ``all components, including handlebars, seat, pedals, and both wheels, are fully intact and firmly attached'' to ensure no part is omitted in the generated image."
+    },
+    "Object Occlusion Errors": {
+        "refinement": "The optimized prompt addresses this by explicitly defining the spatial hierarchy between objects and emphasizing the visibility of critical items.",
+        "example": "For example, the original prompt caused the woman's face to be partially obscured by the vase in the foreground.\nThe optimized prompt specifies the ``woman positioned in the foreground with a clear, unobstructed view of her face'' and adjusts the spatial arrangement by stating ``the vase placed behind the woman'' ensuring key elements remain visible and the intended focus is maintained in the generated image."
+    },
+    "Unwanted Brand Elements": {
+        "refinement": "The optimized prompt addresses this by explicitly stating the exclusion of any brand characteristics and emphasizing their absence.",
+        "example": "In this case, the original image features undesired brand symbols such as ``NEFE'' on the paintbrush, which were not specified in the original prompt.\nThe optimized prompt explicitly excludes brand names or symbols, leading to cleaner results without unwanted visual elements."
+    },
+    "Temporal Ambiguity Errors": {
+        "refinement": "The optimized prompt addresses this by explicitly specifying the exact time point or time period to eliminate ambiguity.",
+        "example": "For example, the original prompt inadequately linked the scene to a clear midnight context, creating ambiguity regarding the setting.\nIn the optimized prompt, midnight context details were reinforced with references to the moon’s alignment, object illumination, and atmospheric serenity, ensuring a precise and unambiguous temporal setting in the generated image."
+    },
+    "Seasonal Element Errors": {
+        "refinement": "The optimized prompt addresses this by explicitly specifying the exact season and detailing natural characteristics, climate conditions, and typical activities associated with that season.",
+        "example": "For example, the original prompt led to confusion over specific items associated with each season, resulting in misplaced elements like pumpkins in spring and summer images.\nThe optimized prompt explicitly rejects inappropriate additional objects and emphasizes relevant seasonal motifs and colors, ensuring the generated image accurately reflects the intended season."
+    },
+    "Facial Expression Errors": {
+        "refinement": "The optimized prompt addresses this by providing detailed descriptions of facial features and utilizing environmental contrasts to highlight the desired expression.",
+        "example": "For example, the original prompt failed to fully convey the fierce expression of fiery vengeance, particularly in the eyes and mouth area.\nThe optimized prompt intensely highlighted key facial features with flames to enhance the skull’s menacing and vengeful expression, ensuring the generated image accurately reflects the intended emotion through detailed facial rendering and environmental emphasis."
+    },
+    "Transparency Errors": {
+        "refinement": "The optimized prompt addresses this by emphasizing the transparent effects of objects and providing details on how light refracts and reflects through them, as well as how other objects are reflected.",
+        "example": "For example, the astronaut's helmet does not correctly reflect or have transparency showing the lunar landscape. The improved prompt focuses on the helmet's transparency property, ensuring its integration with the lunar landscape."
+    },
+    "Background Inconsistency Errors": {
+        "refinement": "The optimized prompt addresses this issue by emphasizing the need for background consistency and setting an overall style theme.",
+        "example": "For instance, the original prompt failed to ensure the entire scene, including the background, maintained visual coherence.\nThe optimized prompt establishes ``a historical 15th-century European setting'' and stresses the importance of keeping the background consistent with this theme, thereby achieving visual harmony in the generated image."
+    },
+    "Contrast Errors": {
+        "refinement": "The optimized prompt resolves this by explicitly specifying the desired contrast and reinforcing related descriptions.",
+        "example": "For example, the lack of emphasis on visual contrast between apples and leaves resulted in less defined distinctions in the images.\nThe optimized prompt highlights the contrast between the circular leaves and square apples to improve visual discrepancy, ensuring the generated image reflects the intended clarity and distinction through enhanced contrast."
+    },
+    "Color Disharmony Errors": {
+        "refinement": "The optimized prompt addresses this by emphasizing the need for overall color coordination and providing a harmonious color scheme.",
+        "example": "For example, the lack of emphasis on color harmony between elements led to disjointed visual tone representations. By emphasizing color harmony and warm tones, the optimized prompt established better visual and thematic coherence."
+    },
+    "Emotional Tone Errors": {
+        "refinement": "The optimized prompt addresses this by elaborately describing the emotional atmosphere and integrating elements like color, lighting, and composition, while emphasizing emotional keywords.",
+        "example": "For example, the original prompt failed to capture the intended sadness in the scene of a solitary figure by the window.\nThe optimized prompt counters this by specifying ``a melancholic atmosphere with soft blue and gray tones,'' ensuring the generated image aligns with the desired emotional impact through cohesive use of color and lighting."
+    },
+    "Object Boundary Errors": {
+        "refinement": "The optimized prompt addresses this by detailing the object’s contours, edge characteristics, and contrast with the background, thereby emphasizing clear boundaries.",
+        "example": "For instance, the original prompt resulted in a tree whose edges blended ambiguously with the background, making the boundary unclear.\nThe optimized prompt specifies that the tree should have ``crisp, well-defined edges with high contrast against the sky'' ensuring the object stands out distinctly in the generated image."
+    }
+}

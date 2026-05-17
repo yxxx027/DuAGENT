@@ -1,0 +1,44 @@
+{
+    "attribute_negations": {
+        "color": ["wrong color", "incorrect color", "colorless", "faded colors", "mismatched colors"],
+        "red": ["blue", "green", "yellow", "orange", "purple"],
+        "blue": ["red", "green", "yellow", "orange", "purple"],
+        "green": ["red", "blue", "yellow", "orange", "purple"],
+        "yellow": ["red", "blue", "green", "orange", "purple"],
+        "white": ["black", "gray", "dark"],
+        "black": ["white", "gray", "light"],
+        "golden": ["silver", "bronze", "dull", "matte"],
+        "material": ["wrong material", "incorrect texture"],
+        "wooden": ["metallic", "plastic", "glass", "concrete"],
+        "metallic": ["wooden", "plastic", "fabric", "soft"],
+        "shape": ["wrong shape", "deformed", "distorted"],
+        "round": ["square", "triangular", "flat"],
+        "square": ["round", "triangular", "oval"],
+        "size": ["wrong size", "incorrect proportions"],
+        "large": ["tiny", "small", "miniature"],
+        "small": ["huge", "giant", "enormous"],
+        "quantity": ["wrong number", "incorrect count", "missing objects", "extra objects"]
+    },
+    "spatial_negations": {
+        "left": ["right side", "far right", "on the right"],
+        "right": ["left side", "far left", "on the left"],
+        "above": ["below", "underneath", "beneath"],
+        "below": ["above", "on top of", "over"],
+        "next to": ["far from", "separated from", "distant from"],
+        "behind": ["in front of", "ahead of"],
+        "in front of": ["behind", "behind of"],
+        "inside": ["outside", "exterior", "out of"],
+        "outside": ["inside", "within", "interior"],
+        "on top of": ["below", "under", "beneath"],
+        "under": ["above", "on top of", "over"],
+        "between": ["outside of", "apart from"]
+    },
+    "general_negations": [
+        "blurry", "low quality", "distorted", "deformed",
+        "extra limbs", "missing limbs", "bad anatomy",
+        "watermark", "text", "logo", "signature",
+        "cropped", "out of frame", "cut off",
+        "duplicate", "mutated", "disfigured",
+        "oversaturated", "underexposed", "overexposed"
+    ]
+}

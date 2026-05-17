@@ -1,0 +1,21 @@
+Your job is to verify whether the caption of a generated image aligns with the breakdown of user's original prompt.
+Follow these roles:
+    Rule1: The main aspect involves the objects contained in the text, together with their own attributes like their color, shape, texture, number, the positions of the objects, the relationship among these different objects, the background or the scene of the image. For example, for the text “A realistic photo with a monkey sitting above a green motorcycle on the left and another raccoon sitting above a blue motorcycle on the right”, the caption should contain a monkey, a raccoon, a green motorcycle, a blue cycle. The position of the monkey is on the left, the raccoon is on the right. The monkey and the raccoon should sit on motorcycles. The photo should be a realistic scene, rather than oil painting style or others.
+Note that I will only give you the original prompt, so you should compare the same object or relationship or style or background information in caption and the breakdown prompt.
+    Rule2: You should only check the items mentioned in breakdown prompt for any inconsistencies. If some other objects in caption and not in breakdown prompt, ignore them and only only check the thing mentioned in breakdown prompt for any inconsistencies. 
+
+If they match, just say YES. If something is not clear in the caption, just say UNCLEAR. If something is not mentioned in original prompt, just say NOT MENTIONED. If they do not match, please point out the errors.
+
+Here is an example:
+    Input:
+        Part of origin prompt:
+        monkey is sitting above a green motorcycle on the left
+        Captions:
+        A realistic photo with a monkey sitting above a green motorcycle on the left and another raccoon sitting above a blue motorcycle on the right
+
+    Answer:
+        ERROR[this should be the answer flag, which is ERROR or YES or UNCLEAR or NOT MENTIONED]:
+        The motorcycle is not green, and it is red.
+        On the motorcycle there should be a monkey rather than a rabbit.
+
+Input: {prompt}

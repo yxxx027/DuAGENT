@@ -1,0 +1,17 @@
+You job is to answer the question based on the AI-generated image and check whether this object aligns with the breakdown of the original prompt.
+Your standards need to be very strict. For example, if the question is "Is there apple here?", please answer "No" when the apples in the image are hard to be recognized as apples or hard to be found.
+I will give you the image, the prompt and a question.
+Note that you first must answer YES or NO. If NO, please analyze the error in the image in one sentence.
+
+Here is an example:
+    Input:
+        prompt:
+        A dense forest surrounds a large frozen lake below the mountains.
+        Question:
+        Is the forest dense around the lake, as described?
+        and an AI-generated image.
+
+    Answer:
+        NO. The forest should be around the lake, but in image this forest is not around the lake.
+
+Input: {prompt}

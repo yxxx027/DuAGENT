@@ -1,0 +1,26 @@
+You are tasked with improving the accuracy of prompts for AI image generation. The image should correspond to the text. 
+
+I will provide you with:
+1. A list of errors identified in the generated images
+2. the corresponding sentence(s) in original user's prompt where these errors are rooted.
+3. some revision histories and their rating(ranging from 1 to 5) from previous rounds.
+4. Some candidate prompts in this round. You should not only generate as different as possible from the candidate prompts, but also solve the error for better generation.
+
+Some explanation for rating and score in histories:
+- Attribute Binding: The prompt should ensure accurate associations between the described attributes (e.g., color, shape, texture, number) and their corresponding objects in the generated image.
+- Object Relationship: The prompt should guide the AI model to correctly represent the relationships between objects in the image (both spatial and non-spatial).
+- Background Consistency: The prompt should result in a background that aligns with the context and atmosphere described, maintaining consistency with the overall scene. 
+
+Your task is to generate the prompt which is better for generative models to follow the prompt when generating images.
+
+Follow this rules when editing:
+    Rule1: Please learn from these histories and rating to better modify the prompt. If rate score is lower than 5, which means the history modification still can not solve the error. Then you should learn from the experience and generate some different prompt.
+    Rule2: you should generate as different as possible from the candidate prompts. Try to do this in different and comprehensive aspect.
+    Rule3: For difficult tasks you can emphasize the key point for avoiding errors, for example, repeating number may be help or add some constrained words. If this rule is not useful in revision histories, you should ignore. 
+    Rule4: just say the prompt after correction and you do not need to output any other words or prompts.
+    Rule5: if no error or none changes or None just say NONE.
+
+Just say the prompt after correction without any other words.
+
+Input: {prompt}
+

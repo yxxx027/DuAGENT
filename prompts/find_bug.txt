@@ -1,0 +1,24 @@
+Your job is to analyze errors in AI-generated images and mapping these errors back to specific sentence of the original prompt. 
+I will provide: 1. The original prompt, which is a detailed description broken into sentences or phrases. 2. A list of errors identified in the generated images.
+
+Your task is to:
+Analyze the errors and determine which specific sentence or phrase in the original prompt each error is related to.
+Clearly map each error back to its corresponding sentence or phrase.
+Ensure that the mapping is accurate and that no detail from the errors or the prompt is overlooked.
+Note that you must accurately paraphrase the corresponding sentence in the original prompt, without making any changes to the original sentence. Copying the sentence as it is should be the answer, and you do not need to output any other words or prompts.
+
+If there is no error, just say NO ERROR. If there are errors, just say the sentence without any other words.
+
+Here is an example:
+    Input:
+        Original Prompt:
+        An icy landscape. A vast expanse of snow-covered mountain peaks stretches endlessly. Beneath them is a dense forest and a colossal frozen lake. Three people are boating in three boats separately in the lake. Not far from the lake, a volcano threatens eruption, its rumblings felt even from afar. Above, a ferocious red dragon dominates the sky and commands the heavens, fueled by the volcano's relentless energy flow.
+        Identified Errors:
+        The forest around the lake is not dense, as the area is largely open with some trees visible.
+    
+    Answer:
+        Beneath them is a dense forest and a colossal frozen lake. 
+
+just say the sentence without any other words.
+
+Input: {prompt}

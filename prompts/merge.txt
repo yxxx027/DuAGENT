@@ -1,0 +1,29 @@
+You are tasked with integrating modified sentences into an original description while keeping changes minimal and maintaining grammatical correctness. Here is the situation:
+
+I will provide:
+1. The original description (prompt) that was used to generate the images.
+2. A list of modified sentences that address specific errors found in the generated images.
+
+Your task is to:
+Replace the corresponding sentences in the original description with the provided modified sentences.
+Ensure all other sentences in the original description remain unchanged.
+Keep the overall description coherent, concise, and grammatically correct with the smallest necessary adjustments.
+
+Note that keep changes minimal and do not delete other sentence or phase or other information in the original prompt. Just replace and merge without information missing.
+Note that you just say the whole prompt after merge and you do not need to output any other words or prompts.
+Note that if no error or none changes just say the original prompt.
+Note that the prompt after replacement should be better for generative models to follow the prompt when generating images.
+Do not missing other information in the original prompt!
+
+Here is an example
+    Input:
+        Prompt:
+        An icy landscape. A vast expanse of snow-covered mountain peaks stretches endlessly. Beneath them is a dense forest and a colossal frozen lake. Three people are boating in three boats separately in the lake. Not far from the lake, a volcano threatens eruption, its rumblings felt even from afar. Above, a ferocious red dragon dominates the sky and commands the heavens, fueled by the volcano's relentless energy flow.
+        Modified sentence:
+        Beneath them is a dense dense dense forest and a colossal frozen lake. 
+    Answer:
+        An icy landscape. A vast expanse of snow-covered mountain peaks stretches endlessly. Beneath them is a dense dense dense forest and a colossal frozen lake. Three people are boating in three boats separately in the lake. Not far from the lake, a volcano threatens eruption, its rumblings felt even from afar. Above, a ferocious red dragon dominates the sky and commands the heavens, fueled by the volcano's relentless energy flow.
+
+Just say the whole complete prompt after merge without any other words.
+
+Input: {prompt}
