@@ -72,7 +72,7 @@ def main():
                         help="Path to image model weights")
     parser.add_argument("--api_key", type=str, default="", help="LLM API key")
     parser.add_argument("--url", type=str, default="", help="LLM API base URL")
-    parser.add_argument("--api_model", type=str, default="", help="LLM model name")
+    parser.add_argument("--api_model", type=str, default="	deepseek-v4-flash", help="LLM model name")
     parser.add_argument("--output_dir", type=str, default="output",
                         help="Output directory")
     parser.add_argument("--use_structured", action="store_true",
@@ -81,8 +81,10 @@ def main():
                         help="Enable negative prompt generation")
     parser.add_argument("--use_clip", action="store_true",
                         help="Enable CLIP scoring")
-    parser.add_argument("--clip_device", type=str, default="cuda:1",
+    parser.add_argument("--clip_device", type=str, default="cuda:0",
                         help="Device for CLIP model")
+    parser.add_argument("--clip_model_path", type=str, default=None,
+                        help="Local path to CLIP model (skip HuggingFace download)")
     args = parser.parse_args()
 
     import torch
@@ -185,7 +187,7 @@ def main():
     if args.use_clip:
         print("Initializing CLIP scorer...")
         from evaluation.clip_scorer import CLIPScorer
-        clip = CLIPScorer(device=args.clip_device)
+        clip = CLIPScorer(device=args.clip_device, model_path=args.clip_model_path)
 
         print("Scoring baseline images...")
         baseline_scores = run_clip_scoring(clip, prompts, baseline_paths)
