@@ -12,7 +12,7 @@
 - [X] `StructuredParser.parse_batch()` — 单条失败不中断，按序返回
 - [X] `StructuredParser._validate_structured()` — 校验顶层字段、object、relation 结构
 - [X] `StructuredParser._fallback_parse()` — 按 and/逗号 分段，不再粗暴塞整句
-- [X] `StructuredParser.reassemble()` — 自然语言重组（数量→英文、颜色→去重、复数化）
+- [X] `StructuredParser.reassemble()` — 自然语言重组（数量→英文、颜色→去重、复数化、环境名词关系过滤）
 
 ## 三、批量测试结果
 
@@ -53,6 +53,21 @@
 2. 冠词 "a"/"an" 仅在 quantity=1 时使用，边缘名词（如 "ocean"）需 LLM 提供正确 quantity
 3. 复数化规则覆盖常见情况但非穷举（不影响 CLIP 评分）
 
+### 环境名词过滤（增量改进）
+
+发现问题后，在 `reassemble()` 中增加环境名词过滤：
+
+- **策略**：保留环境名词作为视觉线索（如 "bright sunlight"），但过滤涉及它们的物理空间关系（如 "apple on top of sunlight"）
+- **环境名词集**：`sunlight, atmosphere, weather, afternoon, morning, evening, sky, background, foreground`
+- **效果**：三轮重复实验平均 CLIP Delta 由 +0.38 → **+1.48**
+
+| 轮次 | Baseline | Improved | Delta |
+|------|----------|----------|-------|
+| 1 | 28.83 | 30.56 | +1.73 |
+| 2 | 30.29 | 30.52 | +0.23 |
+| 3 | 28.56 | 31.04 | +2.47 |
+| **平均** | 29.23 | **30.71** | **+1.48** |
+
 ## 五、论文材料
 
 ### Methodology §1 方法概述
@@ -91,7 +106,7 @@
 
 **旧版问题**：在初版实现中，`reassemble()` 仅遍历所有非空属性值直接拼接。当 LLM 返回 `"other": ["parked"]` 时，Python 的 `str()` 转换产生字面量 `['parked']`；`"quantity": 3` 拼接为裸数字 `3`。重组结果形如 `"red 1 apple, blue 1 ['parked'] car"`，严重偏离自然语言分布，导致 CLIP 评分下降 3.8 分。
 
-**修复策略**：引入属性语义化处理——`quantity` 数字转英文词并驱动复数化，`other`/`action` 作为前置定语，颜色去重（避免 "golden golden retriever"），`null` 和空值跳过。修复后 CLIP Delta 由 -3.81 回升至 +0.38。
+**修复策略**：引入属性语义化处理——`quantity` 数字转英文词并驱动复数化，`other`/`action` 作为前置定语，颜色去重（避免 "golden golden retriever"），`null` 和空值跳过。在此基础上，增加环境名词过滤——保留 "bright sunlight" 等视觉线索但过滤涉及它们的幻象空间关系（如 "apple on top of sunlight"）。修复后 CLIP Delta 由 -3.81 回升至 **+1.48**（三轮均值）。
 
 ## 六、联调与协作
 

@@ -27,6 +27,11 @@ class StructuredParser:
         6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten",
     }
 
+    _ENV_NOUNS = {
+        "sunlight", "atmosphere", "weather", "afternoon",
+        "morning", "evening", "sky", "background", "foreground",
+    }
+
     @staticmethod
     def _pluralize(name: str, qty: int) -> str:
         if qty <= 1:
@@ -89,10 +94,13 @@ class StructuredParser:
         跳过 null/空值，quantity 数字转英文，action 作为定语。
         """
         object_phrases = []
+        env_names = set()  # track env objects to filter their relations
         for obj in structured.get("objects", []):
             name = obj.get("name", "")
             if not name:
                 continue
+            if name.lower().rstrip("s") in self._ENV_NOUNS:
+                env_names.add(name)
             attrs = obj.get("attributes", {})
 
             parts = []
@@ -135,13 +143,15 @@ class StructuredParser:
             parts.append(final_name)
             object_phrases.append(" ".join(parts))
 
-        # spatial relations
+        # spatial relations (skip those involving env nouns)
         relation_phrases = []
         for rel in structured.get("spatial_relations", []):
             subj = rel.get("subject", "")
             relation = rel.get("relation", "")
             obj = rel.get("object", "")
             if subj and relation and obj:
+                if subj in env_names or obj in env_names:
+                    continue
                 relation_phrases.append(f"{subj} {relation} {obj}")
 
         result = ", ".join(object_phrases)
