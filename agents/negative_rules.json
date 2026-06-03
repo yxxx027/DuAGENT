@@ -8,16 +8,27 @@
         "white": ["black", "gray", "dark"],
         "black": ["white", "gray", "light"],
         "golden": ["silver", "bronze", "dull", "matte"],
+        "pastel": ["vibrant", "neon", "dark", "saturated", "bold"],
+        "vibrant": ["muted", "desaturated", "pale", "dull", "pastel"],
         "material": ["wrong material", "incorrect texture"],
         "wooden": ["metallic", "plastic", "glass", "concrete"],
-        "metallic": ["wooden", "plastic", "fabric", "soft"],
+        "metallic": ["wooden", "plastic", "fabric", "soft", "matte", "glossy", "flat", "opaque"],
+        "fabric": ["metallic", "wooden", "plastic", "leather", "glass"],
+        "leather": ["fabric", "plastic", "metallic", "wooden", "cloth"],
+        "ceramic": ["metallic", "plastic", "fabric", "rubber", "wooden"],
+        "plastic": ["wooden", "metallic", "ceramic", "glass", "fabric"],
         "shape": ["wrong shape", "deformed", "distorted"],
         "round": ["square", "triangular", "flat"],
         "square": ["round", "triangular", "oval"],
+        "triangular": ["round", "square", "rectangular", "oval", "spherical"],
+        "cylindrical": ["spherical", "cubic", "flat", "conical", "rectangular"],
+        "spiral": ["straight", "curved", "angular", "flat", "circular"],
         "size": ["wrong size", "incorrect proportions"],
         "large": ["tiny", "small", "miniature"],
         "small": ["huge", "giant", "enormous"],
-        "quantity": ["wrong number", "incorrect count", "missing objects", "extra objects"]
+        "quantity": ["wrong number", "incorrect count", "missing objects", "extra objects"],
+        "realistic": ["cartoon", "anime", "painting", "sketch", "abstract", "stylized"],
+        "photorealistic": ["artistic", "stylized", "cartoon", "abstract", "anime", "painting"]
     },
     "spatial_negations": {
         "left": ["right side", "far right", "on the right"],
@@ -32,6 +43,33 @@
         "on top of": ["below", "under", "beneath"],
         "under": ["above", "on top of", "over"],
         "between": ["outside of", "apart from"]
+    },
+    "style_negations": {
+        "realistic": ["cartoon", "anime", "painting", "drawing", "sketch", "illustration", "3D render", "stylized"],
+        "photorealistic": ["artistic", "stylized", "abstract", "cartoon", "anime", "painting", "sketch"],
+        "cartoon": ["realistic", "photorealistic", "photograph", "3D render", "photo", "naturalistic"],
+        "anime": ["realistic", "photorealistic", "cartoon", "western animation", "photo", "naturalistic"],
+        "watercolor": ["oil painting", "digital art", "photograph", "sketch", "acrylic", "pencil drawing"],
+        "oil_painting": ["watercolor", "digital art", "photograph", "sketch", "pencil drawing", "anime"],
+        "3D_render": ["2D", "painting", "drawing", "photograph", "sketch", "cartoon"],
+        "sketch": ["finished", "colored", "rendered", "photograph", "painting", "realistic"]
+    },
+    "quantity_negations": {
+        "wrong_number": ["exactly one", "single", "unique", "alone", "correct count"],
+        "extra_objects": ["single", "alone", "only one", "minimal", "correct number"],
+        "missing_objects": ["complete", "all", "full set", "nothing missing", "entire"],
+        "too_many": ["single", "one", "minimal", "few", "small number"],
+        "too_few": ["many", "multiple", "several", "group", "plenty"]
+    },
+    "context_negations": {
+        "indoor": ["outdoor", "sky", "clouds", "sun", "nature", "grass", "trees"],
+        "outdoor": ["indoor", "room", "building", "ceiling", "walls", "furniture"],
+        "daytime": ["night", "dark", "moon", "stars", "evening", "midnight"],
+        "night": ["day", "sunlight", "bright", "daytime", "sunny", "noon"],
+        "natural": ["artificial", "man-made", "synthetic", "digital", "urban"],
+        "artificial": ["natural", "organic", "real", "biological", "wild"],
+        "water_scene": ["desert", "dry", "arid", "landlocked", "sand"],
+        "landscape": ["portrait", "close-up", "macro", "interior", "face"]
     },
     "general_negations": [
         "blurry", "low quality", "distorted", "deformed",
