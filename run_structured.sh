@@ -1,59 +1,51 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -Eeuo pipefail
 
-API_KEY="${DEEPSEEK_API_KEY:-YOUR_API_KEY_HERE}"
-BASE_URL="https://api.deepseek.com"
-API_MODEL="deepseek-chat"
-CUDA_DEVICE="cuda:0"
-MODEL_NAME="sd1"
-MODEL_PATH="/home/user5/models/sd1.5"
-INPUT_FILE="evaluation/test_prompts.txt"
-OUTPUT_DIR="output"
+CONFIG_FILE="${CONFIG_FILE:-run_config.example.json}"
+RESUME_RUN="${RESUME_RUN:-}"
 
-mkdir -p "$OUTPUT_DIR"
+fail() {
+  echo "ERROR: $*" >&2
+  exit 1
+}
 
-echo "=========================================="
-echo " Step 1: Baseline Image Generation Only"
-echo "=========================================="
-PYTHONPATH=. python run_structured.py \
-  --input_file "$INPUT_FILE" \
-  --cuda "$CUDA_DEVICE" \
-  --model_name "$MODEL_NAME" \
-  --model_path "$MODEL_PATH" \
-  --output_dir "$OUTPUT_DIR"
+command -v python >/dev/null 2>&1 || fail "python is not available"
+if [[ -n "$RESUME_RUN" ]]; then
+  [[ -d "$RESUME_RUN" ]] || fail "resume directory not found: $RESUME_RUN"
+  CONFIG_FILE="$RESUME_RUN/run_config.json"
+fi
+[[ -f "$CONFIG_FILE" ]] || fail "config file not found: $CONFIG_FILE"
 
-echo ""
-echo "=========================================="
-echo " Step 2: With Structured + Negative Prompt"
-echo "=========================================="
-PYTHONPATH=. python run_structured.py \
-  --input_file "$INPUT_FILE" \
-  --cuda "$CUDA_DEVICE" \
-  --model_name "$MODEL_NAME" \
-  --model_path "$MODEL_PATH" \
-  --api_key "$API_KEY" \
-  --url "$BASE_URL" \
-  --api_model "$API_MODEL" \
-  --use_structured \
-  --use_negative \
-  --output_dir "$OUTPUT_DIR"
+MODEL_PATH="$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["model_path"])' "$CONFIG_FILE")"
+USE_STRUCTURED="$(python -c 'import json,sys; print(str(json.load(open(sys.argv[1])).get("use_structured", False)).lower())' "$CONFIG_FILE")"
+OUTPUT_DIR="$(python -c 'import json,sys; print(json.load(open(sys.argv[1])).get("output_dir", "output"))' "$CONFIG_FILE")"
 
-echo ""
-echo "=========================================="
-echo " Step 3: Full Pipeline with CLIP Scoring"
-echo "=========================================="
-PYTHONPATH=. python run_structured.py \
-  --input_file "$INPUT_FILE" \
-  --cuda "$CUDA_DEVICE" \
-  --model_name "$MODEL_NAME" \
-  --model_path "$MODEL_PATH" \
-  --api_key "$API_KEY" \
-  --url "$BASE_URL" \
-  --api_model "$API_MODEL" \
-  --use_structured \
-  --use_negative \
-  --use_clip \
-  --clip_device "cuda:1" \
-  --output_dir "$OUTPUT_DIR"
+[[ -d "$MODEL_PATH" ]] || fail "model directory not found: $MODEL_PATH"
+[[ -f "$MODEL_PATH/model_index.json" ]] || fail "model_index.json not found in: $MODEL_PATH"
+python -c "import torch; assert torch.cuda.is_available(), 'CUDA is unavailable'" || fail "PyTorch CUDA check failed"
+if [[ -z "${CONDA_PREFIX:-}" ]]; then
+  echo "WARNING: no active Conda environment detected" >&2
+else
+  echo "Conda:  $CONDA_PREFIX"
+fi
 
-echo ""
-echo "All steps completed!"
+if [[ "$USE_STRUCTURED" == "true" && -z "${DEEPSEEK_API_KEY:-}" ]]; then
+  fail "DEEPSEEK_API_KEY is required when use_structured=true"
+fi
+
+ARGS=(--config "$CONFIG_FILE")
+if [[ -n "$RESUME_RUN" ]]; then
+  ARGS+=(--resume_run "$RESUME_RUN")
+  RUN_DIR="$RESUME_RUN"
+else
+  RUN_NAME="${RUN_NAME:-run_$(date +%Y%m%d%H%M%S)}"
+  ARGS+=(--run_name "$RUN_NAME")
+  RUN_DIR="$OUTPUT_DIR/$RUN_NAME"
+fi
+
+echo "Config: $CONFIG_FILE"
+echo "Model:  $MODEL_PATH"
+echo "Run:    $RUN_DIR"
+
+PYTHONPATH=. python run_structured.py "${ARGS[@]}"
+python -c 'import json,sys,pathlib; p=pathlib.Path(sys.argv[1]); c=json.load(open(p/"checkpoint.json")); assert c["status"]=="completed"; n=len(c["prompts"]); assert len(list((p/"baseline_images").glob("*.png")))==n; assert len(list((p/"improved_images").glob("*.png")))==n; assert (p/"results.json").is_file(); print(f"Verified completed run with {n} prompts: {p}")' "$RUN_DIR"

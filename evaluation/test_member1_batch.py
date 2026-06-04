@@ -1,12 +1,16 @@
 """成员1批量解析测试脚本。输出统计、样例、重组前后对比。"""
 import json
+import os
 import sys
 from agents.structured_parser import StructuredParser
 from utils_all.api import APIClient
 
 template = open("prompts/structured_parse.txt").readlines()
+api_key = os.environ.get("DEEPSEEK_API_KEY")
+if not api_key:
+    raise RuntimeError("Set DEEPSEEK_API_KEY before running this integration test.")
 client = APIClient(
-    api_key="sk-a1e95a020c3e4f3eb9aaea6ddadc95a3",
+    api_key=api_key,
     url="https://api.deepseek.com",
     api_name="deepseek-chat",
 )
