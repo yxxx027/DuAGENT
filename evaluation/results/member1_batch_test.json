@@ -1,0 +1,811 @@
+[
+  {
+    "index": 0,
+    "status": "OK",
+    "original": "A red apple and a blue car are parked next to a green tree on a sunny afternoon.",
+    "structured": {
+      "objects": [
+        {
+          "id": 1,
+          "name": "apple",
+          "attributes": {
+            "color": "red",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 2,
+          "name": "car",
+          "attributes": {
+            "color": "blue",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": "parked"
+          }
+        },
+        {
+          "id": 3,
+          "name": "tree",
+          "attributes": {
+            "color": "green",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "sunlight",
+          "attributes": {
+            "color": "bright",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "apple",
+          "relation": "next to",
+          "object": "car"
+        },
+        {
+          "subject": "car",
+          "relation": "next to",
+          "object": "tree"
+        },
+        {
+          "subject": "apple",
+          "relation": "on top of",
+          "object": "sunlight"
+        },
+        {
+          "subject": "car",
+          "relation": "on top of",
+          "object": "sunlight"
+        },
+        {
+          "subject": "tree",
+          "relation": "on top of",
+          "object": "sunlight"
+        }
+      ]
+    },
+    "reassembled": "a red apple, a blue parked car, a green tree, a bright sunlight. apple next to car, car next to tree, apple on top of sunlight, car on top of sunlight, tree on top of sunlight."
+  },
+  {
+    "index": 1,
+    "status": "OK",
+    "original": "A golden retriever is sitting on a wooden bench under a large oak tree, with a red ball on the grass to its left.",
+    "structured": {
+      "objects": [
+        {
+          "id": 1,
+          "name": "golden retriever",
+          "attributes": {
+            "color": "golden",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": "sitting"
+          }
+        },
+        {
+          "id": 2,
+          "name": "bench",
+          "attributes": {
+            "color": null,
+            "material": "wooden",
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "oak tree",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": "large",
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "ball",
+          "attributes": {
+            "color": "red",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 5,
+          "name": "grass",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "golden retriever",
+          "relation": "on top of",
+          "object": "bench"
+        },
+        {
+          "subject": "bench",
+          "relation": "under",
+          "object": "oak tree"
+        },
+        {
+          "subject": "ball",
+          "relation": "on top of",
+          "object": "grass"
+        },
+        {
+          "subject": "ball",
+          "relation": "left of",
+          "object": "golden retriever"
+        }
+      ]
+    },
+    "reassembled": "a sitting golden retriever, a wooden bench, a large oak tree, a red ball, a grass. golden retriever on top of bench, bench under oak tree, ball on top of grass, ball left of golden retriever."
+  },
+  {
+    "index": 2,
+    "status": "OK",
+    "original": "Three white cats are sitting on a red sofa, with a yellow lamp behind them and a blue rug underneath.",
+    "structured": {
+      "objects": [
+        {
+          "id": 1,
+          "name": "cat",
+          "attributes": {
+            "color": "white",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 3,
+            "action": "sitting"
+          }
+        },
+        {
+          "id": 2,
+          "name": "sofa",
+          "attributes": {
+            "color": "red",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "lamp",
+          "attributes": {
+            "color": "yellow",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "rug",
+          "attributes": {
+            "color": "blue",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "cat",
+          "relation": "on top of",
+          "object": "sofa"
+        },
+        {
+          "subject": "lamp",
+          "relation": "behind",
+          "object": "cat"
+        },
+        {
+          "subject": "rug",
+          "relation": "under",
+          "object": "sofa"
+        }
+      ]
+    },
+    "reassembled": "three white sitting cats, a red sofa, a yellow lamp, a blue rug. cat on top of sofa, lamp behind cat, rug under sofa."
+  },
+  {
+    "index": 3,
+    "status": "OK",
+    "original": "A tall glass building with a round clock tower stands behind a small wooden bridge over a blue river.",
+    "structured": {
+      "objects": [
+        {
+          "id": 1,
+          "name": "building",
+          "attributes": {
+            "color": null,
+            "material": "glass",
+            "shape": null,
+            "size": "tall",
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 2,
+          "name": "clock tower",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": "round",
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "bridge",
+          "attributes": {
+            "color": null,
+            "material": "wooden",
+            "shape": null,
+            "size": "small",
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "river",
+          "attributes": {
+            "color": "blue",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "building",
+          "relation": "behind",
+          "object": "bridge"
+        },
+        {
+          "subject": "clock tower",
+          "relation": "on top of",
+          "object": "building"
+        },
+        {
+          "subject": "bridge",
+          "relation": "over",
+          "object": "river"
+        }
+      ]
+    },
+    "reassembled": "a tall glass building, a round clock tower, a small wooden bridge, a blue river. building behind bridge, clock tower on top of building, bridge over river."
+  },
+  {
+    "index": 4,
+    "status": "OK",
+    "original": "A young woman in a purple dress is holding a white umbrella while standing next to a black horse on a green hill.",
+    "structured": {
+      "objects": [
+        {
+          "id": 1,
+          "name": "woman",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": "young",
+            "quantity": 1,
+            "action": "standing"
+          }
+        },
+        {
+          "id": 2,
+          "name": "dress",
+          "attributes": {
+            "color": "purple",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "umbrella",
+          "attributes": {
+            "color": "white",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "horse",
+          "attributes": {
+            "color": "black",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 5,
+          "name": "hill",
+          "attributes": {
+            "color": "green",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "woman",
+          "relation": "wearing",
+          "object": "dress"
+        },
+        {
+          "subject": "woman",
+          "relation": "holding",
+          "object": "umbrella"
+        },
+        {
+          "subject": "woman",
+          "relation": "next to",
+          "object": "horse"
+        },
+        {
+          "subject": "woman",
+          "relation": "on top of",
+          "object": "hill"
+        },
+        {
+          "subject": "horse",
+          "relation": "on top of",
+          "object": "hill"
+        }
+      ]
+    },
+    "reassembled": "a young standing woman, a purple dress, a white umbrella, a black horse, a green hill. woman wearing dress, woman holding umbrella, woman next to horse, woman on top of hill, horse on top of hill."
+  },
+  {
+    "index": 5,
+    "status": "OK",
+    "original": "Two brown dogs are running on a sandy beach with a red frisbee between them and the ocean in the background.",
+    "structured": {
+      "objects": [
+        {
+          "id": 1,
+          "name": "dog",
+          "attributes": {
+            "color": "brown",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 2,
+            "action": "running"
+          }
+        },
+        {
+          "id": 2,
+          "name": "beach",
+          "attributes": {
+            "color": null,
+            "material": "sandy",
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "frisbee",
+          "attributes": {
+            "color": "red",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "ocean",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "dog",
+          "relation": "on top of",
+          "object": "beach"
+        },
+        {
+          "subject": "frisbee",
+          "relation": "between",
+          "object": "dog"
+        },
+        {
+          "subject": "ocean",
+          "relation": "behind",
+          "object": "beach"
+        }
+      ]
+    },
+    "reassembled": "two brown running dogs, a sandy beach, a red frisbee, a ocean. dog on top of beach, frisbee between dog, ocean behind beach."
+  },
+  {
+    "index": 6,
+    "status": "OK",
+    "original": "A silver teapot and a blue ceramic cup are placed on a round wooden table inside a bright kitchen.",
+    "structured": {
+      "objects": [
+        {
+          "id": 1,
+          "name": "teapot",
+          "attributes": {
+            "color": "silver",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 2,
+          "name": "cup",
+          "attributes": {
+            "color": "blue",
+            "material": "ceramic",
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "table",
+          "attributes": {
+            "color": null,
+            "material": "wooden",
+            "shape": "round",
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "kitchen",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "teapot",
+          "relation": "next to",
+          "object": "cup"
+        },
+        {
+          "subject": "teapot",
+          "relation": "on top of",
+          "object": "table"
+        },
+        {
+          "subject": "cup",
+          "relation": "on top of",
+          "object": "table"
+        },
+        {
+          "subject": "table",
+          "relation": "inside",
+          "object": "kitchen"
+        }
+      ]
+    },
+    "reassembled": "a silver teapot, a blue ceramic cup, a round wooden table, a kitchen. teapot next to cup, teapot on top of table, cup on top of table, table inside kitchen."
+  },
+  {
+    "index": 7,
+    "status": "OK",
+    "original": "A small red car is parked in front of a tall white building with green windows on a rainy street.",
+    "structured": {
+      "objects": [
+        {
+          "id": 1,
+          "name": "car",
+          "attributes": {
+            "color": "red",
+            "material": null,
+            "shape": null,
+            "size": "small",
+            "quantity": 1,
+            "action": "parked"
+          }
+        },
+        {
+          "id": 2,
+          "name": "building",
+          "attributes": {
+            "color": "white",
+            "material": null,
+            "shape": null,
+            "size": "tall",
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "window",
+          "attributes": {
+            "color": "green",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "street",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": "rainy"
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "car",
+          "relation": "in front of",
+          "object": "building"
+        },
+        {
+          "subject": "window",
+          "relation": "inside",
+          "object": "building"
+        },
+        {
+          "subject": "building",
+          "relation": "on",
+          "object": "street"
+        }
+      ]
+    },
+    "reassembled": "a small red parked car, a tall white building, a green window, a rainy street. car in front of building, window inside building, building on street."
+  },
+  {
+    "index": 8,
+    "status": "OK",
+    "original": "A large orange cat is sleeping on a blue cushion next to a green plant on a wooden shelf.",
+    "structured": {
+      "objects": [
+        {
+          "id": 1,
+          "name": "cat",
+          "attributes": {
+            "color": "orange",
+            "material": null,
+            "shape": null,
+            "size": "large",
+            "quantity": 1,
+            "action": "sleeping"
+          }
+        },
+        {
+          "id": 2,
+          "name": "cushion",
+          "attributes": {
+            "color": "blue",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "plant",
+          "attributes": {
+            "color": "green",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "shelf",
+          "attributes": {
+            "color": null,
+            "material": "wooden",
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "cat",
+          "relation": "on top of",
+          "object": "cushion"
+        },
+        {
+          "subject": "cushion",
+          "relation": "next to",
+          "object": "plant"
+        },
+        {
+          "subject": "cushion",
+          "relation": "on top of",
+          "object": "shelf"
+        },
+        {
+          "subject": "plant",
+          "relation": "on top of",
+          "object": "shelf"
+        }
+      ]
+    },
+    "reassembled": "a large orange sleeping cat, a blue cushion, a green plant, a wooden shelf. cat on top of cushion, cushion next to plant, cushion on top of shelf, plant on top of shelf."
+  },
+  {
+    "index": 9,
+    "status": "OK",
+    "original": "Five yellow ducks are swimming in a circular pond with a stone fountain in the center and green lily pads around.",
+    "structured": {
+      "objects": [
+        {
+          "id": 1,
+          "name": "duck",
+          "attributes": {
+            "color": "yellow",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 5,
+            "action": "swimming"
+          }
+        },
+        {
+          "id": 2,
+          "name": "pond",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": "circular",
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "fountain",
+          "attributes": {
+            "color": null,
+            "material": "stone",
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "lily pad",
+          "attributes": {
+            "color": "green",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "duck",
+          "relation": "inside",
+          "object": "pond"
+        },
+        {
+          "subject": "fountain",
+          "relation": "in the center of",
+          "object": "pond"
+        },
+        {
+          "subject": "lily pad",
+          "relation": "around",
+          "object": "fountain"
+        }
+      ]
+    },
+    "reassembled": "five yellow swimming ducks, a circular pond, a stone fountain, a green lily pad. duck inside pond, fountain in the center of pond, lily pad around fountain."
+  }
+]

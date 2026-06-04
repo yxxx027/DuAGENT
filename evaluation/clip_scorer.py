@@ -8,16 +8,17 @@ class CLIPScorer:
     本地运行，无需 API。
     """
 
-    def __init__(self, device: str = "cuda:0"):
+    def __init__(self, device: str = "cuda:0", model_path: str = None):
         self.device = device
+        self.model_path = model_path or "openai/clip-vit-large-patch14"
         self.model = None
         self.processor = None
         self._load_model()
 
     def _load_model(self):
         from transformers import CLIPModel, CLIPProcessor
-        self.model = CLIPModel.from_pretrained("openai/clip-vit-large-patch14")
-        self.processor = CLIPProcessor.from_pretrained("openai/clip-vit-large-patch14")
+        self.model = CLIPModel.from_pretrained(self.model_path)
+        self.processor = CLIPProcessor.from_pretrained(self.model_path)
         self.model.to(self.device)
         self.model.eval()
 
