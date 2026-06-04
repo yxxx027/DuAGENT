@@ -11,7 +11,7 @@ huggingface-hub==0.30.2
 importlib_metadata==8.7.0
 jiter==0.9.0
 joblib==1.5.0
-mkl-service==2.4.0
+mkl-service==2.4.2
 packaging==25.0
 protobuf==6.30.2
 psutil==7.0.0
