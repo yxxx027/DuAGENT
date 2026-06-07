@@ -1,0 +1,860 @@
+{
+  "status": "completed",
+  "prompts": [
+    "A red apple is on the left of a blue toy car, and both objects are placed on a wooden table in a bright kitchen.",
+    "Three white cats are sitting on a red sofa, with a yellow lamp behind them and a blue rug underneath the sofa.",
+    "A transparent glass cup is placed next to a silver spoon on a black reflective table, with a small lemon behind the cup.",
+    "A small brown dog is sitting inside a cardboard box, while an orange ball is placed directly in front of the box.",
+    "A futuristic robot is holding a glowing green cube in its left hand and a red sphere in its right hand, standing in a cyberpunk city street at night.",
+    "Five yellow ducks are swimming in a circular pond, with a stone fountain in the center and green lily pads around the edge.",
+    "A white ceramic vase is above three blue books on a wooden shelf, while a small golden clock is below the shelf.",
+    "A watercolor painting of two cats under a red umbrella: the black cat is on the left, the white cat is on the right, and rain falls in the background.",
+    "A long dining table in a warm restaurant contains five white plates, two candles, one golden cup in the center, and a vase of purple flowers at the far end.",
+    "A minimal poster-style image with a yellow circle at the top, a blue square in the center, a red triangle at the bottom, and a small green star inside the square."
+  ],
+  "structured_results": [
+    {
+      "objects": [
+        {
+          "id": 1,
+          "name": "apple",
+          "attributes": {
+            "color": "red",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 2,
+          "name": "toy car",
+          "attributes": {
+            "color": "blue",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "table",
+          "attributes": {
+            "color": null,
+            "material": "wooden",
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "kitchen",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": "bright"
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "apple",
+          "relation": "left of",
+          "object": "toy car"
+        },
+        {
+          "subject": "apple",
+          "relation": "on top of",
+          "object": "table"
+        },
+        {
+          "subject": "toy car",
+          "relation": "on top of",
+          "object": "table"
+        },
+        {
+          "subject": "table",
+          "relation": "inside",
+          "object": "kitchen"
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "id": 1,
+          "name": "cat",
+          "attributes": {
+            "color": "white",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 3,
+            "action": "sitting"
+          }
+        },
+        {
+          "id": 2,
+          "name": "sofa",
+          "attributes": {
+            "color": "red",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "lamp",
+          "attributes": {
+            "color": "yellow",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "rug",
+          "attributes": {
+            "color": "blue",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "cat",
+          "relation": "on top of",
+          "object": "sofa"
+        },
+        {
+          "subject": "lamp",
+          "relation": "behind",
+          "object": "cat"
+        },
+        {
+          "subject": "rug",
+          "relation": "under",
+          "object": "sofa"
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "id": 1,
+          "name": "cup",
+          "attributes": {
+            "color": "transparent",
+            "material": "glass",
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": "placed"
+          }
+        },
+        {
+          "id": 2,
+          "name": "spoon",
+          "attributes": {
+            "color": "silver",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "table",
+          "attributes": {
+            "color": "black",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": "reflective"
+          }
+        },
+        {
+          "id": 4,
+          "name": "lemon",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": "small",
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "cup",
+          "relation": "next to",
+          "object": "spoon"
+        },
+        {
+          "subject": "cup",
+          "relation": "on top of",
+          "object": "table"
+        },
+        {
+          "subject": "spoon",
+          "relation": "on top of",
+          "object": "table"
+        },
+        {
+          "subject": "lemon",
+          "relation": "behind",
+          "object": "cup"
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "id": 1,
+          "name": "dog",
+          "attributes": {
+            "color": "brown",
+            "material": null,
+            "shape": null,
+            "size": "small",
+            "quantity": 1,
+            "action": "sitting"
+          }
+        },
+        {
+          "id": 2,
+          "name": "box",
+          "attributes": {
+            "color": null,
+            "material": "cardboard",
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "ball",
+          "attributes": {
+            "color": "orange",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": "placed"
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "dog",
+          "relation": "inside",
+          "object": "box"
+        },
+        {
+          "subject": "ball",
+          "relation": "in front of",
+          "object": "box"
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "id": 1,
+          "name": "robot",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": "standing"
+          }
+        },
+        {
+          "id": 2,
+          "name": "cube",
+          "attributes": {
+            "color": "green",
+            "material": null,
+            "shape": "cube",
+            "size": null,
+            "quantity": 1,
+            "action": "glowing"
+          }
+        },
+        {
+          "id": 3,
+          "name": "sphere",
+          "attributes": {
+            "color": "red",
+            "material": null,
+            "shape": "sphere",
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "city street",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "robot",
+          "relation": "holding",
+          "object": "cube"
+        },
+        {
+          "subject": "cube",
+          "relation": "in",
+          "object": "left hand"
+        },
+        {
+          "subject": "robot",
+          "relation": "holding",
+          "object": "sphere"
+        },
+        {
+          "subject": "sphere",
+          "relation": "in",
+          "object": "right hand"
+        },
+        {
+          "subject": "robot",
+          "relation": "standing",
+          "object": "city street"
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "id": 1,
+          "name": "duck",
+          "attributes": {
+            "color": "yellow",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 5,
+            "action": "swimming"
+          }
+        },
+        {
+          "id": 2,
+          "name": "pond",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": "circular",
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "fountain",
+          "attributes": {
+            "color": null,
+            "material": "stone",
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "lily pad",
+          "attributes": {
+            "color": "green",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "duck",
+          "relation": "inside",
+          "object": "pond"
+        },
+        {
+          "subject": "fountain",
+          "relation": "in the center of",
+          "object": "pond"
+        },
+        {
+          "subject": "lily pad",
+          "relation": "around",
+          "object": "pond"
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "id": 1,
+          "name": "vase",
+          "attributes": {
+            "color": "white",
+            "material": "ceramic",
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 2,
+          "name": "book",
+          "attributes": {
+            "color": "blue",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 3,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "shelf",
+          "attributes": {
+            "color": null,
+            "material": "wooden",
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "clock",
+          "attributes": {
+            "color": "golden",
+            "material": null,
+            "shape": null,
+            "size": "small",
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "vase",
+          "relation": "above",
+          "object": "book"
+        },
+        {
+          "subject": "book",
+          "relation": "on top of",
+          "object": "shelf"
+        },
+        {
+          "subject": "clock",
+          "relation": "below",
+          "object": "shelf"
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "id": 1,
+          "name": "painting",
+          "attributes": {
+            "color": null,
+            "material": "watercolor",
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 2,
+          "name": "cat",
+          "attributes": {
+            "color": "black",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "cat",
+          "attributes": {
+            "color": "white",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "umbrella",
+          "attributes": {
+            "color": "red",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 5,
+          "name": "rain",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": "falling"
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "cat",
+          "relation": "under",
+          "object": "umbrella"
+        },
+        {
+          "subject": "cat",
+          "relation": "under",
+          "object": "umbrella"
+        },
+        {
+          "subject": "black cat",
+          "relation": "left of",
+          "object": "white cat"
+        },
+        {
+          "subject": "white cat",
+          "relation": "right of",
+          "object": "black cat"
+        },
+        {
+          "subject": "rain",
+          "relation": "behind",
+          "object": "umbrella"
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "id": 1,
+          "name": "dining table",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": "long",
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 2,
+          "name": "restaurant",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "plate",
+          "attributes": {
+            "color": "white",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 5,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "candle",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 2,
+            "action": null
+          }
+        },
+        {
+          "id": 5,
+          "name": "cup",
+          "attributes": {
+            "color": "golden",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 6,
+          "name": "vase",
+          "attributes": {
+            "color": null,
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 7,
+          "name": "flowers",
+          "attributes": {
+            "color": "purple",
+            "material": null,
+            "shape": null,
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "dining table",
+          "relation": "inside",
+          "object": "restaurant"
+        },
+        {
+          "subject": "plate",
+          "relation": "on top of",
+          "object": "dining table"
+        },
+        {
+          "subject": "candle",
+          "relation": "on top of",
+          "object": "dining table"
+        },
+        {
+          "subject": "cup",
+          "relation": "in the center of",
+          "object": "dining table"
+        },
+        {
+          "subject": "vase",
+          "relation": "at the far end of",
+          "object": "dining table"
+        },
+        {
+          "subject": "flowers",
+          "relation": "inside",
+          "object": "vase"
+        }
+      ]
+    },
+    {
+      "objects": [
+        {
+          "id": 1,
+          "name": "circle",
+          "attributes": {
+            "color": "yellow",
+            "material": null,
+            "shape": "circle",
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 2,
+          "name": "square",
+          "attributes": {
+            "color": "blue",
+            "material": null,
+            "shape": "square",
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 3,
+          "name": "triangle",
+          "attributes": {
+            "color": "red",
+            "material": null,
+            "shape": "triangle",
+            "size": null,
+            "quantity": 1,
+            "action": null
+          }
+        },
+        {
+          "id": 4,
+          "name": "star",
+          "attributes": {
+            "color": "green",
+            "material": null,
+            "shape": "star",
+            "size": "small",
+            "quantity": 1,
+            "action": null
+          }
+        }
+      ],
+      "spatial_relations": [
+        {
+          "subject": "circle",
+          "relation": "at the top",
+          "object": "square"
+        },
+        {
+          "subject": "square",
+          "relation": "in the center of",
+          "object": "poster"
+        },
+        {
+          "subject": "triangle",
+          "relation": "at the bottom",
+          "object": "square"
+        },
+        {
+          "subject": "star",
+          "relation": "inside",
+          "object": "square"
+        }
+      ]
+    }
+  ],
+  "enhanced_prompts": [
+    "a red apple, a blue toy car, a wooden table, a bright kitchen. apple left of toy car, apple on top of table, toy car on top of table, table inside kitchen.",
+    "three white sitting cats, a red sofa, a yellow lamp, a blue rug. cat on top of sofa, lamp behind cat, rug under sofa.",
+    "a transparent glass placed cup, a silver spoon, a black reflective table, a small lemon. cup next to spoon, cup on top of table, spoon on top of table, lemon behind cup.",
+    "a small brown sitting dog, a cardboard box, a orange placed ball. dog inside box, ball in front of box.",
+    "a standing robot, a cube green glowing cube, a sphere red sphere, a city street. robot holding cube, cube in left hand, robot holding sphere, sphere in right hand, robot standing city street.",
+    "five yellow swimming ducks, a circular pond, a stone fountain, a green lily pad. duck inside pond, fountain in the center of pond, lily pad around pond.",
+    "a white ceramic vase, three blue books, a wooden shelf, a small golden clock. vase above book, book on top of shelf, clock below shelf.",
+    "a watercolor painting, a black cat, a white cat, a red umbrella, a falling rain. cat under umbrella, cat under umbrella, black cat left of white cat, white cat right of black cat, rain behind umbrella.",
+    "a long dining table, a restaurant, five white plates, two candles, a golden cup, a vase, a purple flowers. dining table inside restaurant, plate on top of dining table, candle on top of dining table, cup in the center of dining table, vase at the far end of dining table, flowers inside vase.",
+    "a circle yellow circle, a square blue square, a triangle red triangle, a small star green star. circle at the top square, square in the center of poster, triangle at the bottom square, star inside square."
+  ],
+  "negative_prompts": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "baseline_paths": [
+    "output\\member1_only_20260608000904\\baseline_images\\0.png",
+    "output\\member1_only_20260608000904\\baseline_images\\1.png",
+    "output\\member1_only_20260608000904\\baseline_images\\2.png",
+    "output\\member1_only_20260608000904\\baseline_images\\3.png",
+    "output\\member1_only_20260608000904\\baseline_images\\4.png",
+    "output\\member1_only_20260608000904\\baseline_images\\5.png",
+    "output\\member1_only_20260608000904\\baseline_images\\6.png",
+    "output\\member1_only_20260608000904\\baseline_images\\7.png",
+    "output\\member1_only_20260608000904\\baseline_images\\8.png",
+    "output\\member1_only_20260608000904\\baseline_images\\9.png"
+  ],
+  "improved_paths": [
+    "output\\member1_only_20260608000904\\improved_images\\0.png",
+    "output\\member1_only_20260608000904\\improved_images\\1.png",
+    "output\\member1_only_20260608000904\\improved_images\\2.png",
+    "output\\member1_only_20260608000904\\improved_images\\3.png",
+    "output\\member1_only_20260608000904\\improved_images\\4.png",
+    "output\\member1_only_20260608000904\\improved_images\\5.png",
+    "output\\member1_only_20260608000904\\improved_images\\6.png",
+    "output\\member1_only_20260608000904\\improved_images\\7.png",
+    "output\\member1_only_20260608000904\\improved_images\\8.png",
+    "output\\member1_only_20260608000904\\improved_images\\9.png"
+  ],
+  "baseline_scores": [
+    7.4825,
+    9.0399,
+    8.5675,
+    9.716,
+    8.1695,
+    8.0716,
+    6.3782,
+    9.1017,
+    6.6703,
+    7.2312
+  ],
+  "improved_scores": [
+    7.5477,
+    7.5298,
+    6.6019,
+    7.2719,
+    8.9778,
+    8.1782,
+    6.6204,
+    9.6404,
+    6.4421,
+    7.8287
+  ]
+}

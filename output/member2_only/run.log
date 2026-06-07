@@ -1,0 +1,4 @@
+2026-06-07 23:23:10,018 | INFO | Loaded 10 prompts from evaluation/test_prompts.txt
+2026-06-07 23:23:10,018 | INFO | Run directory: output\member2_only_20260607232307
+2026-06-07 23:24:14,777 | INFO | Run complete. Results: output\member2_only_20260607232307
+2026-06-07 23:24:14,777 | INFO | Log file: output\member2_only_20260607232307\run.log

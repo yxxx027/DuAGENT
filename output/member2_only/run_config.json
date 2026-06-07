@@ -1,0 +1,23 @@
+{
+  "input_file": "evaluation/test_prompts.txt",
+  "cuda": "cuda:0",
+  "model_name": "sd1",
+  "model_path": "C:\\models\\sd1.5",
+  "url": "https://api.deepseek.com",
+  "api_model": "deepseek-chat",
+  "output_dir": "output",
+  "template_path": "prompts/structured_parse.txt",
+  "use_structured": false,
+  "use_negative": true,
+  "use_clip": true,
+  "clip_device": "cuda:0",
+  "clip_model_path": "C:\\models\\clip-vit-large-patch14",
+  "cache": false,
+  "max_retries": 3,
+  "retry_delay": 2.0,
+  "retry_backoff": 2.0,
+  "seed": 42,
+  "width": 512,
+  "height": 512,
+  "num_inference_steps": 50
+}

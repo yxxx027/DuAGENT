@@ -1,0 +1,4 @@
+2026-06-07 23:17:51,184 | INFO | Loaded 10 prompts from evaluation/test_prompts.txt
+2026-06-07 23:17:51,185 | INFO | Run directory: output\baseline_20260607231749
+2026-06-07 23:19:00,048 | INFO | Run complete. Results: output\baseline_20260607231749
+2026-06-07 23:19:00,049 | INFO | Log file: output\baseline_20260607231749\run.log

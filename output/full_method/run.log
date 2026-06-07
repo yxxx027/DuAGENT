@@ -1,0 +1,4 @@
+2026-06-08 00:12:09,586 | INFO | Loaded 10 prompts from evaluation/test_prompts.txt
+2026-06-08 00:12:09,587 | INFO | Run directory: output\full_method_20260608001207
+2026-06-08 00:13:50,601 | INFO | Run complete. Results: output\full_method_20260608001207
+2026-06-08 00:13:50,601 | INFO | Log file: output\full_method_20260608001207\run.log

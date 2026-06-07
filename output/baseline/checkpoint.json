@@ -1,0 +1,99 @@
+{
+  "status": "completed",
+  "prompts": [
+    "A red apple is on the left of a blue toy car, and both objects are placed on a wooden table in a bright kitchen.",
+    "Three white cats are sitting on a red sofa, with a yellow lamp behind them and a blue rug underneath the sofa.",
+    "A transparent glass cup is placed next to a silver spoon on a black reflective table, with a small lemon behind the cup.",
+    "A small brown dog is sitting inside a cardboard box, while an orange ball is placed directly in front of the box.",
+    "A futuristic robot is holding a glowing green cube in its left hand and a red sphere in its right hand, standing in a cyberpunk city street at night.",
+    "Five yellow ducks are swimming in a circular pond, with a stone fountain in the center and green lily pads around the edge.",
+    "A white ceramic vase is above three blue books on a wooden shelf, while a small golden clock is below the shelf.",
+    "A watercolor painting of two cats under a red umbrella: the black cat is on the left, the white cat is on the right, and rain falls in the background.",
+    "A long dining table in a warm restaurant contains five white plates, two candles, one golden cup in the center, and a vase of purple flowers at the far end.",
+    "A minimal poster-style image with a yellow circle at the top, a blue square in the center, a red triangle at the bottom, and a small green star inside the square."
+  ],
+  "structured_results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "enhanced_prompts": [
+    "A red apple is on the left of a blue toy car, and both objects are placed on a wooden table in a bright kitchen.",
+    "Three white cats are sitting on a red sofa, with a yellow lamp behind them and a blue rug underneath the sofa.",
+    "A transparent glass cup is placed next to a silver spoon on a black reflective table, with a small lemon behind the cup.",
+    "A small brown dog is sitting inside a cardboard box, while an orange ball is placed directly in front of the box.",
+    "A futuristic robot is holding a glowing green cube in its left hand and a red sphere in its right hand, standing in a cyberpunk city street at night.",
+    "Five yellow ducks are swimming in a circular pond, with a stone fountain in the center and green lily pads around the edge.",
+    "A white ceramic vase is above three blue books on a wooden shelf, while a small golden clock is below the shelf.",
+    "A watercolor painting of two cats under a red umbrella: the black cat is on the left, the white cat is on the right, and rain falls in the background.",
+    "A long dining table in a warm restaurant contains five white plates, two candles, one golden cup in the center, and a vase of purple flowers at the far end.",
+    "A minimal poster-style image with a yellow circle at the top, a blue square in the center, a red triangle at the bottom, and a small green star inside the square."
+  ],
+  "negative_prompts": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "baseline_paths": [
+    "output\\baseline_20260607231749\\baseline_images\\0.png",
+    "output\\baseline_20260607231749\\baseline_images\\1.png",
+    "output\\baseline_20260607231749\\baseline_images\\2.png",
+    "output\\baseline_20260607231749\\baseline_images\\3.png",
+    "output\\baseline_20260607231749\\baseline_images\\4.png",
+    "output\\baseline_20260607231749\\baseline_images\\5.png",
+    "output\\baseline_20260607231749\\baseline_images\\6.png",
+    "output\\baseline_20260607231749\\baseline_images\\7.png",
+    "output\\baseline_20260607231749\\baseline_images\\8.png",
+    "output\\baseline_20260607231749\\baseline_images\\9.png"
+  ],
+  "improved_paths": [
+    "output\\baseline_20260607231749\\improved_images\\0.png",
+    "output\\baseline_20260607231749\\improved_images\\1.png",
+    "output\\baseline_20260607231749\\improved_images\\2.png",
+    "output\\baseline_20260607231749\\improved_images\\3.png",
+    "output\\baseline_20260607231749\\improved_images\\4.png",
+    "output\\baseline_20260607231749\\improved_images\\5.png",
+    "output\\baseline_20260607231749\\improved_images\\6.png",
+    "output\\baseline_20260607231749\\improved_images\\7.png",
+    "output\\baseline_20260607231749\\improved_images\\8.png",
+    "output\\baseline_20260607231749\\improved_images\\9.png"
+  ],
+  "baseline_scores": [
+    7.4825,
+    9.0399,
+    8.5675,
+    9.716,
+    8.1695,
+    8.0716,
+    6.3782,
+    9.1017,
+    6.6703,
+    7.2312
+  ],
+  "improved_scores": [
+    7.4825,
+    9.0399,
+    8.5675,
+    9.716,
+    8.1695,
+    8.0716,
+    6.3782,
+    9.1017,
+    6.6703,
+    7.2312
+  ]
+}
